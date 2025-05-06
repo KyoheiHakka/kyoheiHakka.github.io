@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>麻雀計算機　プライバシポリシー</title>
-<meta name="description" content="麻雀計算機　プライバシーポリシー">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <meta charset="utf-8">
+  <title>麻雀計算機 プライバシーポリシー</title>
+  <meta name="description" content="麻雀計算機 プライバシーポリシー">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <style>
+    .lang { display: none; }
+    .lang.active { display: block; }
+  </style>
+</head>
+<body>
 
-  <script src="main.js"></script>
+  <select id="languageSwitcher">
+    <option value="ja">日本語</option>
+    <option value="en">English</option>
+    <option value="zh-HK">繁體中文（香港）</option>
+    <option value="zh-Hans">简体中文</option>
+  </select>
 
-  <h1> 麻雀計算機のプライバシーポリシー</h1>
-    第三者に個人を特定できる情報を提供することはありません。
-    個人情報の管理には細心の注意を払い、以下に挙げた通りに扱います。
+  <!-- 日本語 -->
+  <div class="lang ja active">
+    <h1>麻雀計算機のプライバシーポリシー</h1>
+    <p>第三者に個人を特定できる情報を提供することはありません。<br>
+       個人情報の管理には細心の注意を払い、以下に挙げた通りに扱います。</p>
+    <h2>データ解析</h2>
+    <p>本アプリでは、アプリの利便性向上のため、匿名で、個人を特定できない範囲に細心の注意を払い、アクセス解析をしております。<br>
+    例えばアプリがクラッシュした時、どの部分でクラッシュしたかを匿名で送信し、バグの素早い修正に役立たせております。</p>
+    <p>また、デバイスやアプリバージョンの使用率、特定の機能の使用率などを解析し、アプリの改善に役立たせています。</p>
+    <h1>連絡先</h1>
+    <p>不明点がありましたら appkyoheihakka[AT]GMAIL まで連絡ください。</p>
+  </div>
 
-  <h2> データ解析 </h2>
-    本アプリでは、アプリの利便性向上のため、匿名で、個人を特定できない範囲に細心の注意を払い、アクセス解析をしております。
-    例えばアプリがクラッシュした時、どの部分でクラッシュしたかを匿名で送信し、バグの素早い修正に役立たせております。
-  
-    また、デバイスやアプリバージョンの使用率、特定の機能の使用率などを解析し、アプリの改善に役立たせています。
+  <!-- 英語 -->
+  <div class="lang en">
+    <h1>Privacy Policy for Mahjong Calculator</h1>
+    <p>We do not share personally identifiable information with third parties.<br>
+       We take great care in handling personal information and manage it as described below.</p>
+    <h2>Data Analysis</h2>
+    <p>This app conducts anonymous access analysis to improve user convenience, taking care not to identify individuals.<br>
+    For example, crash reports are sent anonymously to help us quickly fix bugs.</p>
+    <p>We also analyze usage rates of devices, app versions, and specific features to improve the app.</p>
+    <h1>Contact</h1>
+    <p>If you have any questions, please contact us at appkyoheihakka[AT]GMAIL.</p>
+  </div>
 
-  <h1> 連絡先 </h1>
-  不明点がありましたら appkyoheihakka[AT]GMAIL まで連絡ください。
+  <!-- 繁體中文（香港） -->
+  <div class="lang zh-HK">
+    <h1>麻雀計算機私隱政策</h1>
+    <p>我們不會向第三方提供任何可識別個人身份的資訊。<br>
+       我們非常謹慎地管理個人資料，並按以下方式處理。</p>
+    <h2>數據分析</h2>
+    <p>本應用程式會進行匿名的存取分析，以提升使用便利性，並避免識別個人身份。<br>
+       例如，應用程式崩潰時會匿名發送錯誤資訊，以協助快速修正錯誤。</p>
+    <p>我們亦會分析設備、應用版本和特定功能的使用率，以改善應用程式。</p>
+    <h1>聯絡方式</h1>
+    <p>如有疑問，請聯絡 appkyoheihakka[AT]GMAIL。</p>
+  </div>
 
+  <!-- 简体中文 -->
+  <div class="lang zh-Hans">
+    <h1>麻将计算器隐私政策</h1>
+    <p>我们不会向第三方提供任何可识别个人身份的信息。<br>
+       我们对个人信息的管理非常谨慎，并按如下方式处理。</p>
+    <h2>数据分析</h2>
+    <p>本应用程序会进行匿名的访问分析，以提升使用体验，同时确保无法识别用户身份。<br>
+       例如在应用崩溃时，会匿名发送错误信息，以便快速修复问题。</p>
+    <p>我们还会分析设备、应用版本和特定功能的使用情况，以改善应用。</p>
+    <h1>联系方式</h1>
+    <p>如有任何疑问，请联系 appkyoheihakka[AT]GMAIL。</p>
+  </div>
 
+  <script>
+    document.getElementById("languageSwitcher").addEventListener("change", function() {
+      const selected = this.value;
+      document.querySelectorAll(".lang").forEach(div => {
+        div.classList.remove("active");
+      });
+      document.querySelector(`.lang.${selected}`).classList.add("active");
+    });
+  </script>
+
+</body>
+</html>
