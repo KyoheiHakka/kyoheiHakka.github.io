@@ -1,35 +1,164 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>麻雀計算機　利用規約</title>
-<meta name="description" content="麻雀計算機　利用規約">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <meta charset="utf-8">
+  <title>麻雀計算機 利用規約</title>
+  <meta name="description" content="麻雀計算機 利用規約">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <style>
+    .lang { display: none; }
+    .lang.active { display: block; }
+  </style>
+</head>
+<body>
 
-  <script src="main.js"></script>
+  <select id="languageSwitcher">
+    <option value="ja">日本語</option>
+    <option value="en">English</option>
+    <option value="zh-HK">繁體中文（香港）</option>
+    <option value="zh-Hans">简体中文</option>
+  </select>
 
-  <h1> 麻雀計算機の利用規約 </h1>
-  <h2> 利用規約 </h2>
-    私が提供するアプリケーションソフトについての利用規約（以下「本規約」）を以下の通りに定めます。
+  <!-- 日本語 -->
+  <div class="lang ja active">
+    <h1>麻雀計算機の利用規約</h1>
 
-  <h2> 利用者 </h2>
-  １．本規約は、本サービスの提供を希望して本アプリを自己の端末にダウンロードした利用者（以下「利用者」）に適用されます。
-  ２．利用者は、本アプリを自己の端末にダウンロードし、本サービスを利用することにより、本規約に同意したものとみなされます。
-  ３．本アプリのダウンロード、及び本サービスの利用にかかる通信費用は、利用者が負担するものとします。
+    <h2>利用規約</h2>
+    <p>私が提供するアプリケーションソフトについての利用規約（以下「本規約」）を以下の通りに定めます。</p>
 
-  <h2> 利用者情報 </h2>
-  1．本アプリをご利用になる皆様の利便性を向上させるため、端末名、OSおよび本アプリの識別ID（以下、総称して「利用者情報」といいます。なお、利用者情報には、氏名、メールアドレス、クレジットカード情報などの情報を含みません。）を取得することがあります。
-  2．当社は、利用者情報を原則として第三者に開示する事はありませんが、以下の場合には第三者に利用者情報を提供することがあります。ただし、提供する利用者情報は必要最低限の情報に限り、利用者情報が漏えい、滅失、改ざんされないように図ります。
-  （１）本サービスの提供、マーケティング、新規サービス開発、及びサービス向上に関する業務を第三者に委託する場合
-  （２）公的機関から正当な理由により開示を要求された場合
-  （３）その他任意に利用者の同意を得た場合
+    <h2>利用者</h2>
+    <ol>
+      <li>本規約は、本サービスの提供を希望して本アプリを自己の端末にダウンロードした利用者（以下「利用者」）に適用されます。</li>
+      <li>利用者は、本アプリを自己の端末にダウンロードし、本サービスを利用することにより、本規約に同意したものとみなされます。</li>
+      <li>本アプリのダウンロード、及び本サービスの利用にかかる通信費用は、利用者が負担するものとします。</li>
+    </ol>
 
-  <h2> その他 </h2>
-  １．利用者の事前の承諾を得ることなく、本アプリ及び本サービスの内容の全部または一部を変更することがあります。
-  ２．利用者は、本サービスを利用するにあたって、本規約等以外に、対応端末の製造者や通信会社等の第三者が提供するサービスを併せて使用する場合には、当該第三者の規約等が適用される場合があります。
-  
-  <h1> 連絡先 </h1>
-  不明点がありましたら appkyoheihakka[AT]GMAIL まで連絡ください。
+    <h2>利用者情報</h2>
+    <ol>
+      <li>本アプリをご利用になる皆様の利便性を向上させるため、端末名、OSおよび本アプリの識別ID（以下「利用者情報」）を取得することがあります。氏名、メールアドレス、クレジットカード情報などの情報は含みません。</li>
+      <li>当社は、原則として利用者情報を第三者に開示しませんが、以下の場合に限り提供することがあります：
+        <ul>
+          <li>（１）サービス提供や改善のため第三者に業務を委託する場合</li>
+          <li>（２）公的機関から正当な理由で開示を求められた場合</li>
+          <li>（３）利用者の同意を得た場合</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>その他</h2>
+    <ol>
+      <li>事前の通知なくアプリやサービスの内容を変更する場合があります。</li>
+      <li>利用者は、本サービス以外にも端末メーカーや通信会社の規約が適用される可能性があることに同意するものとします。</li>
+    </ol>
+
+    <h1>連絡先</h1>
+    <p>不明点がありましたら appkyoheihakka[AT]GMAIL まで連絡ください。</p>
+  </div>
+
+  <!-- English -->
+  <div class="lang en">
+    <h1>Terms of Use for Mahjong Calculator</h1>
+
+    <h2>Terms of Use</h2>
+    <p>These Terms of Use ("Terms") apply to the application software provided by us.</p>
+
+    <h2>Users</h2>
+    <ol>
+      <li>These Terms apply to individuals who wish to use the service and have downloaded the application to their own devices (hereinafter referred to as "Users").</li>
+      <li>By downloading and using this application, Users are deemed to have agreed to these Terms.</li>
+      <li>All communication costs related to downloading and using the application shall be borne by the User.</li>
+    </ol>
+
+    <h2>User Information</h2>
+    <ol>
+      <li>To improve user experience, we may collect the device name, OS, and application identifier (collectively "User Information"). This does not include names, email addresses, or credit card details.</li>
+      <li>We do not disclose User Information to third parties in principle. However, we may share it in the following cases, and only to the minimum necessary extent:
+        <ul>
+          <li>(1) When outsourcing service provision, marketing, new service development, or improvement tasks to third parties.</li>
+          <li>(2) When required by public institutions for legitimate reasons.</li>
+          <li>(3) When the User has given explicit consent.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Other</h2>
+    <ol>
+      <li>The contents of the application or service may be changed in whole or in part without prior notice to the User.</li>
+      <li>Users may be subject to the terms and conditions of third-party services such as device manufacturers or telecommunications providers in addition to these Terms.</li>
+    </ol>
+
+    <h1>Contact</h1>
+    <p>If you have any questions, please contact: appkyoheihakka[AT]GMAIL</p>
+  </div>
+  <!-- 繁體中文（香港） -->
+  <div class="lang zh-HK">
+    <h1>麻雀計算機使用條款</h1>
+
+    <h2>使用條款</h2>
+    <p>本使用條款（以下簡稱「本條款」）適用於由本公司提供的應用程式。</p>
+
+    <h2>使用者</h2>
+    <ol>
+      <li>本條款適用於希望使用本服務並下載本應用程式至其裝置的使用者（以下稱為「使用者」）。</li>
+      <li>使用者下載並使用本應用程式，即視為同意本條款的內容。</li>
+      <li>與下載及使用本應用程式相關的通訊費用，須由使用者自行承擔。</li>
+    </ol>
+
+    <h2>使用者資料</h2>
+    <ol>
+      <li>為提升使用者體驗，本應用可能會收集裝置名稱、作業系統版本及應用程式識別碼（以下統稱為「使用者資料」）。使用者資料不包括姓名、電郵地址或信用卡資訊等個人資料。</li>
+      <li>原則上，我們不會向第三方披露使用者資料，但在以下情況下，可能在最小必要範圍內提供該等資料：
+        <ul>
+          <li>（1）為提供服務、行銷、新服務開發及改善而委託第三方執行相關業務時</li>
+          <li>（2）根據公營機構的合法要求而需披露資料時</li>
+          <li>（3）獲得使用者明確同意時</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>其他事項</h2>
+    <ol>
+      <li>本應用程式及其服務的全部或部分內容，可能在無事先通知使用者的情況下更改。</li>
+      <li>使用者在使用本服務時，如同時使用裝置製造商、電訊商等第三方提供的服務，該等服務的條款亦可能適用。</li>
+    </ol>
+
+    <h1>聯絡方式</h1>
+    <p>如有任何疑問，請聯絡：appkyoheihakka[AT]GMAIL</p>
+  </div>
+  <!-- 简体中文 -->
+  <div class="lang zh-Hans">
+    <h1>麻将计算器使用条款</h1>
+
+    <h2>使用条款</h2>
+    <p>本使用条款（以下简称“本条款”）适用于我们提供的应用程序。</p>
+
+    <h2>用户</h2>
+    <ol>
+      <li>本条款适用于希望使用本服务并将应用程序下载至自身设备的用户（以下简称“用户”）。</li>
+      <li>用户下载并使用本应用程序，即视为已同意本条款的内容。</li>
+      <li>与下载及使用本应用相关的通信费用由用户自行承担。</li>
+    </ol>
+
+    <h2>用户信息</h2>
+    <ol>
+      <li>为了提升用户体验，我们可能会收集设备名称、操作系统版本及应用标识符（以下统称为“用户信息”）。用户信息不包括姓名、电子邮箱地址或信用卡等个人信息。</li>
+      <li>我们原则上不会向第三方披露用户信息，但在以下情况下，可能在最小必要范围内提供：
+        <ul>
+          <li>（1）将服务提供、营销、新服务开发或改进相关工作委托给第三方时</li>
+          <li>（2）依法接到政府机关的正当请求时</li>
+          <li>（3）获得用户明确同意时</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>其他事项</h2>
+    <ol>
+      <li>我们可能在未事先通知用户的情况下，变更本应用及服务的全部或部分内容。</li>
+      <li>用户在使用本服务时，若同时使用设备制造商、电信公司等第三方提供的服务，则该等第三方的条款也可能适用。</li>
+    </ol>
+
+    <h1>联系方式</h1>
+    <p>如有疑问，请联系：appkyoheihakka[AT]GMAIL</p>
+  </div>
